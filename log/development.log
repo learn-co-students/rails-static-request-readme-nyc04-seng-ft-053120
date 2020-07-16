@@ -614,3 +614,38 @@ puma (4.2.0) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
   Rendering /Users/kellyegreene/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
   Rendered /Users/kellyegreene/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
   Rendered /Users/kellyegreene/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (49.6ms)
+Started GET "/about" for ::1 at 2020-07-15 21:57:44 -0400
+Processing by StaticController#about as HTML
+  Rendering static/some_page.html.erb
+  Rendered static/some_page.html.erb (2.2ms)
+Completed 200 OK in 16ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2020-07-15 21:57:44 -0400
+Processing by StaticController#about as HTML
+  Rendering static/some_page.html.erb
+  Rendered static/some_page.html.erb (0.3ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2020-07-15 21:57:53 -0400
+Started GET "/about" for ::1 at 2020-07-15 21:58:03 -0400
+Started GET "/about" for ::1 at 2020-07-15 21:58:03 -0400
+Processing by StaticController#about as HTML
+  Rendering static/about.html.erb
+  Rendered static/about.html.erb (0.5ms)
+Completed 200 OK in 7ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Processing by StaticController#about as HTML
+Processing by StaticController#about as HTML
+  Rendering static/about.html.erb
+  Rendered static/about.html.erb (0.1ms)
+  Rendering static/about.html.erb
+  Rendered static/about.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
